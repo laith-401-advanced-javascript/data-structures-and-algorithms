@@ -12,3 +12,7 @@ function BinarySearch(storedArray, searchKey) {
     }
     return result;
 }
+
+BinarySearch([1, 2, 3, 5, 8], 2);
+
+module.exports = BinarySearch;

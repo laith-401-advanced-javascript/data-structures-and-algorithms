@@ -14,7 +14,9 @@ I used in the first way for loop
 and in the other way I used some mathhimatical logic to do so
 ## Action Link 
 
-[https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245)
+[https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245]
+
+(https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245)
 
 ## Solution
 <!-- Embedded whiteboard image -->

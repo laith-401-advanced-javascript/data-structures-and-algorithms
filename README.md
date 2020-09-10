@@ -6,15 +6,15 @@ Code challenges 401
 
 **Challenge**     | **URL**
 ------------ | -------------
-Home         | [Home](https://github.com/adnan-401-advanced-javascript/data-structures-and-algorithms)
+Home         | [Home](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms)
  prep 01     | [JS Fundamentals](https://github.com/laith-2020/data-structures-and-algorithms)
  prep 02     | [ES6 Classes](https://repl.it/repls/DefinitiveKookyNumericalanalysis#vehicles-with-classes.js)
  prep 03     | [Callbacks](https://repl.it/repls/UnsightlyHuskyMatrix#index.js)
  prep 04     | [Promises](https://repl.it/repls/DelightfulOutlyingPrinters#index.js)
  prep 05     | [Async/Await](https://repl.it/repls/RecklessOverdueOutcome#index.js)
- class 01    | [Reverse an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/1)
- class 02    | [Shift an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/2)
-  class 03    | [array-binary-search](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/3)
+ codeChallenge1    | [Reverse an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/1)
+ codeChallenge2    | [Shift an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/2)
+  codeChallenge3    | [array-binary-search](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/3)
   
 
 

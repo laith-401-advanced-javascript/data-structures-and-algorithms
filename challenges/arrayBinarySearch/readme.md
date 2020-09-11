@@ -12,11 +12,12 @@ we write a function to search for  a number in the  array
 this Challenge take from me 20 min including tow ways to do that
 I used in the first way for loop
 and in the other way I used some mathhimatical logic to do so
+
 ## Action Link 
 
-[https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245]
+[Action Link ]
 
-(https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245)
+(https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/248858913)
 
 ## Solution
 <!-- Embedded whiteboard image -->

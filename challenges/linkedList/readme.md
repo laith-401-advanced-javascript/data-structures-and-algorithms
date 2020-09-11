@@ -16,9 +16,9 @@ this Challenge take from me 60 min  to do tha
 
 ## Action Link 
 
-[https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245]
+[ Action Link]
 
-(https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/243515245)
+(https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/250446381)
 
 ## Solution
 <!-- Embedded whiteboard image -->

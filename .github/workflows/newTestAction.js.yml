@@ -3,9 +3,9 @@
 name: Node.js CI
 on:
   push:
-    branches: [master, array-binary-search]
+    branches: [master, linked-list]
   pull_request:
-    branches: [master, array-binary-search]
+    branches: [master, linked-list]
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -22,4 +22,4 @@ this Challenge take from me 50 min  to do tha
 ## Solution
 <!-- Embedded whiteboard image -->
 
-![IMAGE](asset/arrayShift.jpg)
+![IMAGE](../../asset/arrayShift.jpg)

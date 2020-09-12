@@ -18,9 +18,8 @@ class LinkedList {
 
     insert(value) {
         let newNode = new Node(value); // value: value, next: null
-        //if this linked list is empty 
-        console.log('1111', this.head);
-        if (!this.head) {
+        console.log('this.head 1111', this.head);
+        if (!this.head) { //if this linked list is empty
             this.head = newNode;
             this.length++;
             return this;
@@ -29,6 +28,8 @@ class LinkedList {
             // if we have other stuff, I need to add it at the end
             // I have to loop through all nodes and add it to the tail
             let curentNode = this.head;
+            console.log('this.head 2222', this.head);
+
             while (curentNode.next) {
                 curentNode = curentNode.next;
 

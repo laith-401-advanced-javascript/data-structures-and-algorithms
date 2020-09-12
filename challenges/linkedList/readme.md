@@ -23,4 +23,4 @@ this Challenge take from me 60 min  to do tha
 ## Solution
 <!-- Embedded whiteboard image -->
 
-![IMAGE](asset/linked.jpg)
+![IMAGE](../../asset/linked.jpg)

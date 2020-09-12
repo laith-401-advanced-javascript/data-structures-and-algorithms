@@ -22,4 +22,4 @@ and in the other way I used some mathhimatical logic to do so
 ## Solution
 <!-- Embedded whiteboard image -->
 
-![IMAGE](asset/binarySearch.jpg)
+![IMAGE](../../asset/binarySearch.jpg)

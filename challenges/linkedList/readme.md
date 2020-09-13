@@ -24,3 +24,6 @@ this Challenge take from me 60 min  to do tha
 <!-- Embedded whiteboard image -->
 
 ![IMAGE](../../asset/linked.jpg)
+
+![IMAGE](../../asset/linkedlist2.jpg)
+

@@ -66,25 +66,32 @@ describe('linked list module', () => {
 
     it('Can successfully insert a node before the first node of a linked list', () => {
         let ll = new LinkedList();
+        ll.insert(5);
+        ll.insert(10);
+        ll.insert(15);
 
-        ll.insertBefore(5, 6);
-        let currentNode = ll.head
-        while (currentNode.value != 6) {
-            currentNode = currentNode.next
-        }
-        console.log(currentNode);
-        expect(currentNode.next.value).toEqual(5)
+        // console.log(currentNode);
+        expect(ll.insertBefore(10, 6).toString()).toEqual("{ 5} -> { 6} -> { 10} -> { 15} -> null")
     });
 
     it('the insertAfter method add the newVal right After the val', () => {
         let ll = new LinkedList();
-        ll.insertAfter(6, 7);
-        let currentNode = ll.head
-        while (currentNode.value != 6) {
-            currentNode = currentNode.next
-        }
-        console.log(ll);
-        expect(currentNode.next.value).toEqual(7)
+        ll.insert(5);
+        ll.insert(10);
+        ll.insert(15);
+
+        // console.log(currentNode);
+        expect(ll.insertAfter(10, 7).toString()).toEqual("{ 5} -> { 10} -> { 7} -> { 15} -> null")
+    })
+
+    it('Can successfully insert a node after the last node of the linked list', () => {
+        let ll = new LinkedList();
+        ll.insert(5);
+        ll.insert(10);
+        ll.insert(15);
+
+        // console.log(currentNode);
+        expect(ll.insertAfter(15, 20).toString()).toEqual("{ 5} -> { 10} -> { 15} -> { 20} -> null")
     })
 
 

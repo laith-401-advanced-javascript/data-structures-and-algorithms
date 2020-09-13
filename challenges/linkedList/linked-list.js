@@ -41,13 +41,13 @@ class LinkedList {
     }
     insertBefore(value, newValue) {
         let curentNode = this.head;
-        // console.log('curentNodeeeeee', curentNode.next.value);
         while (curentNode.next.value !== value) {
             curentNode = curentNode.next;
         }
         let otherNode;
         otherNode = curentNode.next;
         let newNode = new Node(newValue);
+
         newNode.next = otherNode;
         curentNode.next = newNode;
         this.length++;
@@ -55,14 +55,13 @@ class LinkedList {
 
     }
     insertAfter(value, newValue) {
-        let newNode = new Node(newValue);
-
         let curentNode = this.head;
         while (curentNode.value !== value) {
             curentNode = curentNode.next;
         }
         let otherNode;
         otherNode = curentNode.next;
+        let newNode = new Node(newValue);
 
         newNode.next = otherNode;
         curentNode.next = newNode;
@@ -103,7 +102,7 @@ class LinkedList {
 
 }
 
-// const ll = new LinkedList();
+const ll = new LinkedList();
 
 // ll.insert(5);
 // ll.insert(10);

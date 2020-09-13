@@ -15,7 +15,8 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  codeChallenge1    | [Reverse an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/1)
  codeChallenge2    | [Shift an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/2)
   codeChallenge3    | [array-binary-search](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/3)
-  codeChallenge4    | [linked list](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/)
+  codeChallenge4    | [linked list](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/4)
+    codeChallenge5    | [linked list2](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/5)
   
 
 

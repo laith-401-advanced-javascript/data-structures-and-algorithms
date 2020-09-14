@@ -2,10 +2,7 @@
 
 # linked list
 
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
-Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-Define a method called includes which takes any value as an argument and
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 ## Challenge
 <!-- Description of the challenge -->
 we write a classes to add a linked list
@@ -27,3 +24,4 @@ this Challenge take from me 60 min  to do tha
 
 ![IMAGE](../../asset/linkedlist2.jpg)
 
+![IMAGE](../../asset/linkedlist3.jpg)

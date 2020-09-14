@@ -71,6 +71,25 @@ class LinkedList {
 
     }
 
+    kthFromEnd(k) {
+        let curentNode = this.head;
+        let length = 0;
+        while (curentNode) {
+            length++;
+            curentNode = curentNode.next;
+        }
+        let requireNode = length - 1 - k;
+        if (requireNode < 0 || k < 0) {
+            return 'not valid';
+        }
+        curentNode = this.head;
+        while (requireNode > 0) {
+            requireNode--;
+            curentNode = curentNode.next;
+        }
+        return curentNode.value;
+    }
+
     includes(value) {
         let curentNode = this.head;
         while (curentNode) {
@@ -104,8 +123,11 @@ class LinkedList {
 
 const ll = new LinkedList();
 
-// ll.insert(5);
-// ll.insert(10);
+ll.insert(5);
+ll.insert(10);
+// ll.kthFromEnd(1);
+console.log('**********', ll.kthFromEnd(1));
+
 // ll.insertBefore(10, 50);
 // ll.insertAfter(5, 4);
 
@@ -123,7 +145,7 @@ const ll = new LinkedList();
 // ll.toString();
 // console.log('+++++++++++++++', ll.toString());
 
-// console.log('LL objects', ll);
+console.log('LL objects', ll);
 
 
 module.exports = LinkedList;

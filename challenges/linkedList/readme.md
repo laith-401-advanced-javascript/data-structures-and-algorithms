@@ -2,14 +2,13 @@
 
 # linked list
 
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
-Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-Define a method called includes which takes any value as an argument and
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
 ## Challenge
 <!-- Description of the challenge -->
-we write a classes to add a linked list
-
+ add the methods that add to the end of the linked list and insert a value before a node and insert a value after a node 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 this Challenge take from me 60 min  to do tha
@@ -23,7 +22,11 @@ this Challenge take from me 60 min  to do tha
 ## Solution
 <!-- Embedded whiteboard image -->
 
+## codeChallenge 3 whiteboard
+
 ![IMAGE](../../asset/linked.jpg)
+
+## codeChallenge 4 whiteboard
 
 ![IMAGE](../../asset/linkedlist2.jpg)
 

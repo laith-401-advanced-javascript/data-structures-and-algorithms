@@ -117,16 +117,40 @@ class LinkedList {
         return string;
     }
 
+    mergeLists(list1, list2) {
+        let currentNode1 = list1.head;
+        let currentNode2 = list2.head;
 
+        while (currentNode1 || currentNode2) {
+            if (currentNode1) {
+                this.insert(currentNode1.value);
+                currentNode1 = currentNode1.next;
+            }
+            if (currentNode2) {
+                this.insert(currentNode2.value);
+                currentNode2 = currentNode2.next;
+            }
+        }
+        return this;
+
+    }
 
 }
 
 const ll = new LinkedList();
 
+const ll2 = new LinkedList();
+
+const ll3 = new LinkedList();
+
 ll.insert(5);
 ll.insert(10);
+ll2.insert(15);
+ll2.insert(20);
+// ll3.mergeLists(ll, ll2);
 // ll.kthFromEnd(1);
 console.log('**********', ll.kthFromEnd(1));
+console.log('-------', ll3.mergeLists(ll, ll2).toString());
 
 // ll.insertBefore(10, 50);
 // ll.insertAfter(5, 4);

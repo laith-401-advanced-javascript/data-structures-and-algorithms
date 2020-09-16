@@ -14,10 +14,11 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  prep 05            | [Async/Await](https://repl.it/repls/RecklessOverdueOutcome#index.js)
  codeChallenge1    | [Reverse an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/1)
  codeChallenge2    | [Shift an array](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/2)
-  codeChallenge3    | [array-binary-search](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/3)
+ codeChallenge3    | [array-binary-search](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/3)
   codeChallenge4    | [linked list](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/4)
-    codeChallenge5    | [linked list2](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/5)
-    codeChallenge6    | [linked list2](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/6)
+  codeChallenge5    | [linked list2](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/5)
+  codeChallenge6    | [linked list3](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/6)
+  codeChallenge7    | [linked list4](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/7)
 
 
 

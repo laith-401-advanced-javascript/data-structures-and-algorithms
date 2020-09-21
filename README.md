@@ -20,7 +20,9 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
   codeChallenge6    | [linked list3](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/6)
   codeChallenge7    | [linked list4](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/7)
   codeChallenge8    | [stack and queue](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/8)
-    codeChallenge11    | [ queue-with-stack](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/9)
+ codeChallenge11    | [ queue-with-stack](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/9)
+ codeChallenge12    | [ fifo-animal](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/10)
+
 
 
 # codeChallenge

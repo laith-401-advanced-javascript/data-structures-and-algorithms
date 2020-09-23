@@ -32,5 +32,5 @@ examples and why they fail:
 ## Solution
 <!-- Embedded whiteboard image -->
 
-![IMAGE](../../asset/multiBracket.jpg)
+![IMAGE](../../asset/bracket.jpg)
 

@@ -61,24 +61,25 @@ class BinaryTree {
   }
 
   findMaximumValue() {
-    let maxValue = this.root.value;
-
+    
     if(!this.root){ // if the tree is empty
       return `empty tree`;
     }
-    
-    function _max(root) {
-      if (!root) {
-        return;
+    let maxValue = this.root.value;
+
+    function _max(node) {
+  
+      console.log('maxValue 1111',maxValue);
+      // this condition will assign the new value to the maxValue as long as the new value is grater than the node
+      if (node.value > maxValue) {
+        maxValue = node.value;
       }
-      if (root.value > maxValue) {
-        maxValue = root.value;
+      if (node.left) {
+        _max(node.left);
       }
-      if (root.left) {
-        _max(root.left);
-      }
-      if (root.right) {
-        _max(root.right);
+
+      if (node.right) {
+        _max(node.right);
       }
     }
     _max(this.root);

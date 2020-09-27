@@ -52,6 +52,13 @@ describe('binary tree', () => {
 
   });
 
+  it('findMaximumValue if it is empty ', () => {
+    let tree1 = new BinaryTree();
+    let preOrderOutput = tree1.findMaximumValue();
+    expect(preOrderOutput).toEqual('empty tree');
+
+  });
+
 
 });
 

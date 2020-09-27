@@ -6,14 +6,20 @@
 
 in this challenge we do the tree and BST  , and these two type of data structure 
 
+```
 Node
 The Node class is a new class that has properties for the value stored in the node, the left child node, and the right child node.
+```
 
+```
 Binary Tree
 A BinaryTree class that has a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+```
 
+```
 Binary Search Tree
 A BinarySearchTree class, it has a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree. It also has a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+```
 
 ## Challenge
 Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
@@ -25,9 +31,15 @@ Define a method for each of the depth first traversals called preOrder, inOrder,
 this Challenge take from me 60 min  to do it ,
 i used node stack , binary tree m binary search classes to do  it  
 
-preOrder(): O(n)
-inOrder(): O(n)
-postOrder(): O(n)
+## binarytree
+
+* Big O for time is O(n) becuse it depend on the number of the nodes
+* Big O for space is O(h) becuse it depend on the height of tree
+
+## binarysearchtree
+
+* Big O for time is O(log(n)) becuse it depend on the number of the nodes
+* Big O for space is O(h) becuse it depend on the height of tree
 
 ## Action Link 
 [ Action Link]
@@ -38,5 +50,9 @@ postOrder(): O(n)
 
 
 ## Solution
+
 ![whiteboard](../../asset/code15.jpg)
+
+![whiteboard](../../asset/max-value-BT.jpg)
+
 

@@ -44,6 +44,14 @@ describe('binary tree', () => {
   });
 
 
+  
+  it('findMaximumValue', () => {
+    let expected = 5;
+    let preOrderOutput = tree.findMaximumValue();
+    expect(preOrderOutput).toEqual(expected);
+
+  });
+
 
 });
 

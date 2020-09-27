@@ -23,8 +23,8 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  codeChallenge11    | [ queue-with-stack](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/9)
  codeChallenge12    | [ fifo-animal](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/10)
  codeChallenge13    | [ multi - bracket](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/11)
-  codeChallenge14    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
-
+  codeChallenge15    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
+  codeChallenge16    | [ maxValue](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
 
 # codeChallenge
 

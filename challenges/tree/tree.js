@@ -59,6 +59,34 @@ class BinaryTree {
     _traverse(this.root);
     return output;
   }
+
+  findMaximumValue() {
+    let maxValue = this.root.value;
+
+    if(!this.root){ // if the tree is empty
+      return `empty tree`;
+    }
+    
+    function _max(root) {
+      if (!root) {
+        return;
+      }
+      if (root.value > maxValue) {
+        maxValue = root.value;
+      }
+      if (root.left) {
+        _max(root.left);
+      }
+      if (root.right) {
+        _max(root.right);
+      }
+    }
+    _max(this.root);
+
+    return maxValue;
+
+  }
+
 }
 
 let node1 = new Node(1);
@@ -76,9 +104,12 @@ node3.left = node5;
 let binaryTreeObj = new BinaryTree(node1);
 
 
-console.log('preOrder : >',binaryTreeObj.preOrder());
-console.log('inOrder : >',binaryTreeObj.inOrder());
-console.log('post : >',binaryTreeObj.postOrder());
+console.log('preOrder : >', binaryTreeObj.preOrder());
+// console.log('inOrder : >', binaryTreeObj.inOrder());
+// console.log('post : >', binaryTreeObj.postOrder());
+
+console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());
+
 
 
 
@@ -151,17 +182,17 @@ class BinarySearchTree {
 }
 
 
-let BST = new BinarySearchTree();
+// let BST = new BinarySearchTree();
 
-BST.add(1);
-BST.add(2);
-BST.add(3);
-BST.add(4);
-BST.add(5);
+// BST.add(1);
+// BST.add(2);
+// BST.add(3);
+// BST.add(4);
+// BST.add(5);
 // BST.contains(5);
 
-console.log('contaaaains',BST.contains(10));
-console.log('addd',BST);
+// console.log('contaaaains', BST.contains(10));
+// console.log('addd', BST);
 
 
 // console.log('vvv',BST.root.value);
@@ -176,4 +207,4 @@ console.log('addd',BST);
 
 
 
-module.exports = {Node ,BinaryTree, BinarySearchTree};
+module.exports = { Node, BinaryTree, BinarySearchTree };

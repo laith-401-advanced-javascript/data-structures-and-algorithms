@@ -1,5 +1,7 @@
 'use strict';
 
+// const { Queue } = require('../StacksAndQueues/stacks-and-queues.js');
+
 class Node {
   constructor(value, left = null, right = null) {
     this.value = value;
@@ -61,15 +63,15 @@ class BinaryTree {
   }
 
   findMaximumValue() {
-    
-    if(!this.root){ // if the tree is empty
+
+    if (!this.root) { // if the tree is empty
       return `empty tree`;
     }
     let maxValue = this.root.value;
 
     function _max(node) {
-  
-      console.log('maxValue 1111',maxValue);
+
+      console.log('maxValue 1111', maxValue);
       // this condition will assign the new value to the maxValue as long as the new value is grater than the node
       if (node.value > maxValue) {
         maxValue = node.value;
@@ -88,6 +90,53 @@ class BinaryTree {
 
   }
 
+  // breadthFirst(root) {
+  //   let output = [];
+  //   let newQueue = new Queue();
+  //   newQueue.enqueue(root);
+
+  //   while (newQueue.front) {
+  //     let front = newQueue.dequeue();
+
+  //     console.log('front  >>', front.value);
+  //     // console.log('newQueue >>',newQueue);
+
+  //     output.push(front.value);
+  //     console.log('output 1 >>', output);
+
+  //     if (front.left !== null) {
+  //       console.log('front.leffft  >>', front.left.value);
+
+  //       newQueue.enqueue(front.left);
+  //     }
+  //     if (front.right !== null) {
+  //       console.log('front.riiight  >>', front.right.value);
+  //       newQueue.enqueue(front.right);
+  //     }
+  //   }
+  //   return output;
+
+  // }
+
+  breadthFirst(){
+    let results = [];
+    let array = [];
+
+    if(!this.root){
+      return 'empty tree';
+    }
+
+    array.push(this.root);
+    while(array.length){
+      let node = array.shift();
+      results.push(node.value);
+      if(node.left !==null) array.push(node.left);
+      if (node.right !== null) array.push(node.right);
+    }
+    return results;
+  }
+
+
 }
 
 let node1 = new Node(1);
@@ -96,10 +145,12 @@ let node3 = new Node(3);
 let node4 = new Node(4);
 let node5 = new Node(5);
 
+
 node1.right = node2;
 node1.left = node3;
 node3.right = node4;
 node3.left = node5;
+
 
 
 let binaryTreeObj = new BinaryTree(node1);
@@ -109,7 +160,8 @@ console.log('preOrder : >', binaryTreeObj.preOrder());
 // console.log('inOrder : >', binaryTreeObj.inOrder());
 // console.log('post : >', binaryTreeObj.postOrder());
 
-console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());
+console.log('breadthFirst ==> ', binaryTreeObj.breadthFirst());
+
 
 
 

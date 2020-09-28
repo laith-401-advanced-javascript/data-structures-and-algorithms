@@ -59,8 +59,28 @@ describe('binary tree', () => {
 
   });
 
+  
+
+
+  it('breadthFirst if it is empty ', () => {
+    let tree1 = new BinaryTree();
+    let preOrderOutput = tree1.breadthFirst();
+    expect(preOrderOutput).toEqual('empty tree');
+
+  });
+
+  it('breadthFirst  ', () => {
+    let expected = [1, 3, 2, 5, 4];
+    let preOrderOutput = tree.breadthFirst();
+    expect(preOrderOutput).toEqual(expected);
+
+  });
+
 
 });
+
+
+
 
 describe('binary Search tree', () => {
 

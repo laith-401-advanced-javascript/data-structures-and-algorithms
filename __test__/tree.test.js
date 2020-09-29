@@ -20,7 +20,7 @@ describe('binary tree', () => {
 
 
   let tree = new BinaryTree(node1);
-
+  
   it('preOrder', () => {
     let expected = [1, 3, 5, 4, 2];
     let preOrderOutput = tree.preOrder();
@@ -71,10 +71,27 @@ describe('binary tree', () => {
 
   it('breadthFirst  ', () => {
     let expected = [1, 3, 2, 5, 4];
-    let preOrderOutput = tree.breadthFirst();
-    expect(preOrderOutput).toEqual(expected);
+    let breadthFirstOutput = tree.breadthFirst();
+    expect(breadthFirstOutput).toEqual(expected);
 
   });
+
+
+  it('FizzBuzzTree if it is empty ', () => {
+    let tree1 = new BinaryTree();
+    let FizzBuzzTreeOutput = tree1.FizzBuzzTree();
+    expect(FizzBuzzTreeOutput).toEqual('empty tree');
+
+  });
+
+  // it('FizzBuzzTree  ', () => {
+  //   let expected = [3];
+  //   let FizzBuzzTreeOutput = tree.FizzBuzzTree();
+  //   expect(FizzBuzzTreeOutput).toEqual(expected);
+
+  // });
+
+
 
 
 });

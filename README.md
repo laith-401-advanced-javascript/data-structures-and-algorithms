@@ -26,10 +26,10 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
   codeChallenge15    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
   codeChallenge16    | [ maxValue](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
    codeChallenge17    | [breadth](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/14)
+   codeChallenge18    | [fizzBuzz](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/15)
+
 
 # codeChallenge
-
-
 ```
 ### date
 Date published

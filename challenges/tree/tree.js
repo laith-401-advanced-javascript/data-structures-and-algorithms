@@ -90,47 +90,44 @@ class BinaryTree {
 
   }
 
-  // breadthFirst(root) {
-  //   let output = [];
-  //   let newQueue = new Queue();
-  //   newQueue.enqueue(root);
+  FizzBuzzTree(kArr) {
 
-  //   while (newQueue.front) {
-  //     let front = newQueue.dequeue();
+    if (!kArr) {
+      return `empty tree`;
+    }
+    if (kArr.value % 3 == 0 && kArr.value % 5 == 0) {
+      kArr.value = `FizzBuzz`;
+    }
+    else if (kArr.value % 3 == 0) {
+      kArr.value = `Fizz`;
+  
+    }
+    else if (kArr.value % 5 == 0) {
+      kArr.value = `Buzz`;
+    }
+    else {
+      return kArr.value = kArr.value.toString();
+    }
 
-  //     console.log('front  >>', front.value);
-  //     // console.log('newQueue >>',newQueue);
+    this.FizzBuzzTree(kArr.left);
+    this.FizzBuzzTree(kArr.right);
 
-  //     output.push(front.value);
-  //     console.log('output 1 >>', output);
+  }
 
-  //     if (front.left !== null) {
-  //       console.log('front.leffft  >>', front.left.value);
 
-  //       newQueue.enqueue(front.left);
-  //     }
-  //     if (front.right !== null) {
-  //       console.log('front.riiight  >>', front.right.value);
-  //       newQueue.enqueue(front.right);
-  //     }
-  //   }
-  //   return output;
-
-  // }
-
-  breadthFirst(){
+  breadthFirst() {
     let results = [];
     let array = [];
 
-    if(!this.root){
+    if (!this.root) {
       return 'empty tree';
     }
 
     array.push(this.root);
-    while(array.length){
+    while (array.length) {
       let node = array.shift();
       results.push(node.value);
-      if(node.left !==null) array.push(node.left);
+      if (node.left !== null) array.push(node.left);
       if (node.right !== null) array.push(node.right);
     }
     return results;
@@ -139,30 +136,24 @@ class BinaryTree {
 
 }
 
-let node1 = new Node(1);
-let node2 = new Node(2);
+let node1 = new Node(5);
+let node2 = new Node(15);
 let node3 = new Node(3);
 let node4 = new Node(4);
 let node5 = new Node(5);
-
 
 node1.right = node2;
 node1.left = node3;
 node3.right = node4;
 node3.left = node5;
 
-
-
 let binaryTreeObj = new BinaryTree(node1);
 
+console.log(binaryTreeObj.preOrder());
+binaryTreeObj.FizzBuzzTree(binaryTreeObj.root);
+console.log('binaryTreeObj >>>>',binaryTreeObj);
 
 console.log('preOrder : >', binaryTreeObj.preOrder());
-// console.log('inOrder : >', binaryTreeObj.inOrder());
-// console.log('post : >', binaryTreeObj.postOrder());
-
-console.log('breadthFirst ==> ', binaryTreeObj.breadthFirst());
-
-
 
 
 

@@ -18,9 +18,9 @@ class Stack {
     }
     push(value) {
         const nodeObj = new Node(value);
+
         nodeObj.prev = this.top;
         this.top = nodeObj;
-
         this.length++;
         return this;
     }
@@ -29,9 +29,9 @@ class Stack {
         if (this.isEmpty()) {
             throw new RangeError('can not pop');
         }
-        let item = this.top.prev;
-        // console.log('*****', this.top.prev);
-        this.top = item;
+        let newTop = this.top.prev;
+        console.log('*****', newTop);
+        this.top = newTop;
         this.length--;
         return this;
     }
@@ -50,6 +50,13 @@ class Stack {
 
     }
 }
+const ss = new Stack();
+
+// ss.push(1);
+// ss.push(2);
+// ss.pup();
+// console.log('>>', ss)
+
 
 class Queue {
     constructor() {
@@ -59,20 +66,19 @@ class Queue {
     }
 
     enqueue(value) {
-
         let newNode = new Node(value);
         if (this.front) {
+            this.rare.prev = newNode;
             this.rare = newNode;
-            this.front.prev = this.rare;
-
+            
         } else {
             this.front = newNode;
             this.rare = newNode;
-
         }
         this.length++;
         return this;
     }
+
 
     dequeue() {
         if (this.isEmpty()) {
@@ -101,11 +107,11 @@ class Queue {
 
 }
 
-// let newObj = new Queue();
-// newObj.enqueue(1);
-// newObj.enqueue(2);
-
-// newObj.dequeue();
+let newObj = new Queue();
+newObj.enqueue(1);
+newObj.enqueue(2);
+newObj.enqueue(3)
+newObj.dequeue();
 
 // newObj.pup();
 
@@ -114,7 +120,7 @@ class Queue {
 // newObj.peek();
 
 // newObj.isEmpty();
-// console.log('neeeeeeew ins :', newObj.enqueue(2));
+console.log('neeeeeeew ins :', newObj);
 // console.log('=======>>>> :', newObj);
 
 module.exports = { Stack, Node, Queue };

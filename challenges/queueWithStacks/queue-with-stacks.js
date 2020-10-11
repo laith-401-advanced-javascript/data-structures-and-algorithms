@@ -39,8 +39,8 @@ class PseudoQueue {
 const queue = new PseudoQueue();
 queue.enqueue('Paranoid Android');
 queue.enqueue('15 Step');
-queue.enqueue('Videotape');
-queue.enqueue('Creep');
+// queue.enqueue('Videotape');
+// queue.enqueue('Creep');
 
 // let eqd = queue.enqueue('Everything');
 

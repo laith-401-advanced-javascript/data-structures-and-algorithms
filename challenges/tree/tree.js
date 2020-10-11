@@ -23,14 +23,8 @@ class BinaryTree {
     let _traverse = (node) => {
       output.push(node.value);
 
-      if (node.left) {
-        _traverse(node.left);
-      }
-      if (node.right) {
-
-        _traverse(node.right);
-
-      }
+      if (node.left) { _traverse(node.left);   }
+      if (node.right) {  _traverse(node.right); }
     };
     _traverse(this.root);
     return output;
@@ -76,9 +70,9 @@ node3.left = node5;
 let binaryTreeObj = new BinaryTree(node1);
 
 
-console.log('preOrder : >',binaryTreeObj.preOrder());
-console.log('inOrder : >',binaryTreeObj.inOrder());
-console.log('post : >',binaryTreeObj.postOrder());
+console.log('preOrder : >', binaryTreeObj.preOrder());
+console.log('inOrder : >', binaryTreeObj.inOrder());
+console.log('post : >', binaryTreeObj.postOrder());
 
 
 
@@ -160,8 +154,8 @@ BST.add(4);
 BST.add(5);
 // BST.contains(5);
 
-console.log('contaaaains',BST.contains(10));
-console.log('addd',BST);
+console.log('contaaaains', BST.contains(10));
+console.log('addd', BST);
 
 
 // console.log('vvv',BST.root.value);
@@ -176,4 +170,4 @@ console.log('addd',BST);
 
 
 
-module.exports = {Node ,BinaryTree, BinarySearchTree};
+module.exports = { Node, BinaryTree, BinarySearchTree };

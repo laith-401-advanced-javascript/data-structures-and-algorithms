@@ -24,6 +24,8 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  codeChallenge12    | [ fifo-animal](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/10)
  codeChallenge13    | [ multi - bracket](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/11)
   codeChallenge14    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
+  codeChallenge14    | [ Sorting](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
+
 
 
 # codeChallenge

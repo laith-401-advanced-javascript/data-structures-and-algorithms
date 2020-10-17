@@ -61,15 +61,15 @@ class BinaryTree {
   }
 
   findMaximumValue() {
-    
-    if(!this.root){ // if the tree is empty
+
+    if (!this.root) { // if the tree is empty
       return `empty tree`;
     }
     let maxValue = this.root.value;
 
     function _max(node) {
-  
-      console.log('maxValue 1111',maxValue);
+
+      console.log('maxValue 1111', maxValue);
       // this condition will assign the new value to the maxValue as long as the new value is grater than the node
       if (node.value > maxValue) {
         maxValue = node.value;
@@ -88,7 +88,34 @@ class BinaryTree {
 
   }
 
+
+// to sum the whole tree
+  addSum() {
+    if (!this.root) {
+      return `empty tree`;
+    }
+
+    else {
+      var sum = this.root.value;
+      function _sum(node) {
+        if (node.left) {
+          sum += node.left.value;
+          _sum(node.left)
+        }
+        if (node.right) {
+          sum += node.right.value;
+          _sum(node.right)
+
+        }
+      }
+      _sum(this.root)
+      return sum;
+    }
+
+  }
+
 }
+
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -109,7 +136,10 @@ console.log('preOrder : >', binaryTreeObj.preOrder());
 // console.log('inOrder : >', binaryTreeObj.inOrder());
 // console.log('post : >', binaryTreeObj.postOrder());
 
-console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());
+console.log('addSum : >', binaryTreeObj.addSum());
+
+
+// console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());
 
 
 

@@ -4,10 +4,16 @@
     "description": "# Reverse an Array  a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods and return an array with elements in reversed order.",
     "main": "index.js",
     "scripts": {
+<<<<<<< HEAD
         "test": "jest --verbose --coverage",
         "lint": "eslint '**/*.js'",
     "fix": "eslint './**/*.js' --ignore-pattern node_modules/ --fix"
 
+=======
+        "test": "jest  --verbose --coverage",
+        "lint": "eslint '**/*.js'",
+        "fix": "eslint './**/*.js' --ignore-pattern node_modules/ --fix"
+>>>>>>> master
     },
     "repository": {
         "type": "git",

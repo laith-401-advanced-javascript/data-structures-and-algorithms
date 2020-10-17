@@ -64,4 +64,48 @@ describe('linked list module', () => {
     expect(ll.toString()).toEqual('{ 5} -> { 10} -> { 15} -> null');
   });
 
+  it('Can successfully insert a node before the first node of a linked list', () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.insert(10);
+    ll.insert(15);
+
+    // console.log(currentNode);
+    expect(ll.insertBefore(10, 6).toString()).toEqual('{ 5} -> { 6} -> { 10} -> { 15} -> null');
+  });
+
+  it('the insertAfter method add the newVal right After the val', () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.insert(10);
+    ll.insert(15);
+
+    // console.log(currentNode);
+    expect(ll.insertAfter(10, 7).toString()).toEqual('{ 5} -> { 10} -> { 7} -> { 15} -> null');
+  });
+
+  it('Can successfully insert a node after the last node of the linked list', () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.insert(10);
+    ll.insert(15);
+
+    // console.log(currentNode);
+    expect(ll.insertAfter(15, 20).toString()).toEqual('{ 5} -> { 10} -> { 15} -> { 20} -> null');
+  });
+
+  it('test mergeLists method which takes two linkedLists and merge them togather', () => {
+    const list1 = new LinkedList();
+    list1.insert(1);
+    list1.insert(3);
+    list1.insert(2);
+    const list2 = new LinkedList();
+    list2.insert(5);
+    list2.insert(9);
+    list2.insert(4);
+    const ll = new LinkedList();
+    ll.mergeLists(list1, list2);
+    expect(ll.toString()).toMatch('{ 1} -> { 5} -> { 3} -> { 9} -> { 2} -> { 4} -> null');
+  });
+
 });

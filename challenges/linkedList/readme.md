@@ -2,13 +2,10 @@
 
 # linked list
 
-Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
-Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-Define a method called includes which takes any value as an argument and
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 ## Challenge
 <!-- Description of the challenge -->
-we write a classes to add a linked list
+merge two linked list togother
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -24,3 +21,10 @@ this Challenge take from me 60 min  to do tha
 <!-- Embedded whiteboard image -->
 
 ![IMAGE](../../asset/linked.jpg)
+
+![IMAGE](../../asset/linkedlist2.jpg)
+
+![IMAGE](../../asset/linkedlist3.jpg)
+
+![IMAGE](../../asset/linkedlist-zip.jpg)
+

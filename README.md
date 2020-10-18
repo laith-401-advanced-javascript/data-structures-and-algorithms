@@ -25,6 +25,7 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  codeChallenge13    | [ multi - bracket](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/11)
   codeChallenge15    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
   codeChallenge16    | [ maxValue](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
+    codeChallenge31    | [ Stringthy](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
 
 # codeChallenge
 

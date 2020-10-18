@@ -89,7 +89,7 @@ class BinaryTree {
   }
 
 
-// to sum the whole tree
+  // to sum the whole tree
   addSum() {
     if (!this.root) {
       return `empty tree`;
@@ -97,18 +97,18 @@ class BinaryTree {
 
     else {
       var sum = this.root.value;
-      function _sum(node) {
+      const _sum = (node) => {
         if (node.left) {
           sum += node.left.value;
-          _sum(node.left)
+          _sum(node.left);
         }
         if (node.right) {
           sum += node.right.value;
-          _sum(node.right)
+          _sum(node.right);
 
         }
-      }
-      _sum(this.root)
+      };
+      _sum(this.root);
       return sum;
     }
 

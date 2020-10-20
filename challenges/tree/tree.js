@@ -132,11 +132,11 @@ node3.left = node5;
 let binaryTreeObj = new BinaryTree(node1);
 
 
-console.log('preOrder : >', binaryTreeObj.preOrder());
+// console.log('preOrder : >', binaryTreeObj.preOrder());
 // console.log('inOrder : >', binaryTreeObj.inOrder());
 // console.log('post : >', binaryTreeObj.postOrder());
 
-console.log('addSum : >', binaryTreeObj.addSum());
+// console.log('addSum : >', binaryTreeObj.addSum());
 
 
 // console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());

@@ -40,15 +40,15 @@ class LinkedList {
     }
   }
 
-  reverseLinkedList(value) {
-    let newNode = new Node(value);
-    let curentNode = this.head;
-    while (curentNode) {
-      curentNode.next = curentNode;
-    }
-    curentNode.next = newNode;
-    return this;
-  }
+  // reverseLinkedList(value) {
+  //   let newNode = new Node(value);
+  //   let curentNode = this.head;
+  //   while (curentNode) {
+  //     curentNode.next = curentNode;
+  //   }
+  //   curentNode.next = newNode;
+  //   return this;
+  // }
 
   insertBefore(value, newValue) {
     let curentNode = this.head;
@@ -153,6 +153,7 @@ class LinkedList {
 function reverseLinkedList(list1) {
 
   let curentNode1 = list1.head;
+
   if (!curentNode1) {
     return `linked list is empty`;
   }
@@ -210,12 +211,13 @@ ll.insert(3);
 // console.log('-------', ll3.mergeLists(ll, ll2).toString());
 // console.log('-------', llpalindrom(ll).toString());
 
-console.log('-------', reverseLinkedList(ll).toString());
+// console.log('-------', reverseLinkedList(ll).toString());
 // console.log('LL objects', ll);
 
 // ll3.reverseLinkedList(ll2);
-// ll.insertBefore(10, 50);
+ll.insertBefore(2, 50);
 // ll.insertAfter(5, 4);
+console.log('-------', ll.toString());
 
 // ll.insert(15);
 // ll.insert(20);

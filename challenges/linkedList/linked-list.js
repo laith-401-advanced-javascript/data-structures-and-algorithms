@@ -40,40 +40,33 @@ class LinkedList {
         }
     }
 
-    // reverseLinkedList(value) {
-    //     let newNode = new Node(value);
-    //     let curentNode = this.head;
-    //     while (curentNode) {
-    //         curentNode.next = curentNode;
-    //     }
-    //     curentNode.next = newNode;
-    //     return this;
-    // }
-
     insertBefore(value, newValue) {
         let curentNode = this.head;
-        while (curentNode.next.value !== value) {
-            curentNode = curentNode.next;
+        if (this.head.value == value) {
+            let newNode = new Node(newValue);
+            this.head = newNode;
+            this.head.next = curentNode;
+        } else {
+            while (curentNode.next.value !== value) {
+                curentNode = curentNode.next;
+            }
+            let newNode = new Node(newValue);
+            newNode.next = curentNode.next;
+            curentNode.next = newNode;
         }
-        let newNode = new Node(newValue);
-
-        newNode.next = curentNode.next;
-        curentNode.next = newNode;
         this.length++;
         return this;
 
     }
-
-
     insertAfter(value, newValue) {
         let curentNode = this.head;
         while (curentNode.value !== value) {
             curentNode = curentNode.next;
         }
         let newNode = new Node(newValue);
-
         newNode.next = curentNode.next;
         curentNode.next = newNode;
+
         this.length++;
         return this;
 
@@ -144,9 +137,42 @@ class LinkedList {
 
     }
 
+    // this method to check if we have a value in LL and delete that velue
+    deleteValue(value) {
+        let currentNode = this.head;
+        if (currentNode.value == value) {
+            this.head = currentNode.next;
+        }
+        while (currentNode) {
+            if (currentNode.next.value == value) {
+                currentNode.next = currentNode.next.next;
+            } else {
+                return ` the value is not exist `;
+            }
+        }
+
+    }
+
+
+    meddileLL() {
+        let currentNode = this.head;
+        let array = [];
+        while (currentNode) {
+            array.push(currentNode);
+            currentNode = currentNode.next;
+        }
+        let mid = Math.floor(array.length / 2);
+        console.log('mid >>', mid);
+
+        return array[mid];
+
+
+    }
 
 
 }
+
+
 
 function reverseLinkedList(list1) {
 
@@ -168,24 +194,24 @@ function reverseLinkedList(list1) {
 }
 
 
-// function llpalindrom(list) {
-//     let arr = [];
-//     let curuntNode = list.head;
-//     if (curuntNode) {
-//         arr.push(curuntNode.value);
-//     }
-//     while (curuntNode.next) {
-//         curuntNode = curuntNode.next;
-//         arr.push(curuntNode.value);
+function llpalindrom(list) {
+    let arr = [];
+    let curuntNode = list.head;
+    if (curuntNode) {
+        arr.push(curuntNode.value);
+    }
+    while (curuntNode.next) {
+        curuntNode = curuntNode.next;
+        arr.push(curuntNode.value);
 
-//     }
-//     for (let i = 0; i < arr.length / 2; i++) {
-//         if (arr[i] !== arr[arr.length - (i + 1)]) {
-//             return false;
-//         }
-//         return true;
-//     }
-// }
+    }
+    for (let i = 0; i < arr.length / 2; i++) {
+        if (arr[i] !== arr[arr.length - 1]) {
+            return false;
+        }
+        return true;
+    }
+}
 
 
 
@@ -195,31 +221,29 @@ const ll3 = new LinkedList();
 
 ll.insert(1);
 ll.insert(2);
-// ll.insert(3);
-// ll.insert(5);
+ll.insert(2);
+ll.insert(4);
 
-ll2.insert(15);
-ll2.insert(20);
-// ll3.mergeLists(ll, ll2);
-// ll.kthFromEnd(1);
-console.log('-------', ll.kthFromEnd(0));
-
-// console.log('**********', ll.insertBefore(1,6));
+ll.deleteValue(2)
+// ll.insert(1);
+// ll.insert(0);
+// ll.deleteValue(1);
+// ll2.insert(2);
+// console.log('-------', ll3.mergeLists(ll,ll2).toString());
 console.log('-------', ll.toString());
 
-console.log('-------', ll3.mergeLists(ll, ll2).toString());
-// console.log('-------', llpalindrom(ll).toString());
+// console.log('final Result ', ll.meddileLL());
 
-// console.log('-------', reverseLinkedList(ll).toString());
-// console.log('LL objects', ll);
+// ll2.insert(15);
+// ll2.insert(20);
+// ll3.mergeLists(ll, ll2);
 
 // ll3.reverseLinkedList(ll2);
-// ll.insertBefore(10, 50);
-// ll.insertAfter(5, 4);
+// ll.insertBefore(1, 50);
 
-// ll.insert(15);
-// ll.insert(20);
-// ll.insert(25);
+// ll.insertAfter(5, 4);
+// console.log('-------', ll.toString());
+
 
 
 // console.log('***********---********');

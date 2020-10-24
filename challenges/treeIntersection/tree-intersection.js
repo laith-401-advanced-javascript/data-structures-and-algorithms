@@ -1,26 +1,22 @@
 'use strict';
-const { BinaryTree, Node } = require('../tree/tree.js');
+const { BinaryTree, Node } = require('../tree/tree');
 
 
 function tree_intersection(tree1, tree2) {
-    let results = [];
+  let array = [];
 
-      const _preOrder = (tree) => {
-        const result = [];
-        const traverse = (node) => {
-          result.push(node.value);
-          if (node.left) traverse(node.left);
-          if (node.right) traverse(node.right);
-        };
-        traverse(tree.root);
-        return result;
-      };
 
-    let tree1Arr = _preOrder(tree1);
-    let tree2Arr = _preOrder(tree2);
+  let tree1Arr = tree1.preOrder()
+  let tree2Arr = tree2.preOrder()
 
-    tree1Arr.forEach(val => tree2Arr.includes(val) ? results.push(val) : null);
-    return results;
+  tree1Arr.forEach((itm, idx) => {
+    console.log('item', itm);
+    if (tree2Arr.includes(itm)) {
+      array.push(itm)
+    }
+  })
+  return array
+
 }
 
 
@@ -53,4 +49,18 @@ console.log('preOrder : >', binaryTreeObj.preOrder());
 
 console.log('****', tree_intersection(binaryTreeObj, binaryTreeObj2));
 
+
+
+
+
+
+
+
 module.exports = { tree_intersection }
+
+
+
+
+
+
+

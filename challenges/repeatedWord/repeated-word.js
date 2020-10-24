@@ -1,13 +1,9 @@
 'use strict';
 
 
-
 function lengthyString(str) {
-
   let splitString = str.split(' ');
-
   for (let i = 0; i < splitString.length; i++) {
-
     for (let j = i + 1; j < splitString.length; j++) {
       // this condition will combare the word if it is repeated return that word 
       if (splitString[i] === splitString[j]) {
@@ -22,8 +18,8 @@ function lengthyString(str) {
 
 
 
-// console.log(lengthyString("abc abc"));
-console.log(lengthyString('Once upon a time, there was a brave princess who...'));
+// // console.log(lengthyString("abc abc"));
+// console.log(lengthyString('Once upon a time, there was a brave princess who...'));
 
 
 module.exports = lengthyString;

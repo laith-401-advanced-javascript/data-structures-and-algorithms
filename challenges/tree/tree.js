@@ -53,7 +53,63 @@ class BinaryTree {
     _traverse(this.root);
     return output;
   }
+
+  findMaximumValue() {
+
+    if (!this.root) { // if the tree is empty
+      return `empty tree`;
+    }
+    let maxValue = this.root.value;
+
+    function _max(node) {
+
+      console.log('maxValue 1111', maxValue);
+      // this condition will assign the new value to the maxValue as long as the new value is grater than the node
+      if (node.value > maxValue) {
+        maxValue = node.value;
+      }
+      if (node.left) {
+        _max(node.left);
+      }
+
+      if (node.right) {
+        _max(node.right);
+      }
+    }
+    _max(this.root);
+
+    return maxValue;
+
+  }
+
+
+  // to sum the whole tree
+  addSum() {
+    if (!this.root) {
+      return `empty tree`;
+    }
+
+    else {
+      var sum = this.root.value;
+      const _sum = (node) => {
+        if (node.left) {
+          sum += node.left.value;
+          _sum(node.left);
+        }
+        if (node.right) {
+          sum += node.right.value;
+          _sum(node.right);
+
+        }
+      };
+      _sum(this.root);
+      return sum;
+    }
+
+  }
+
 }
+
 
 let node1 = new Node(1);
 let node2 = new Node(2);
@@ -71,8 +127,19 @@ let binaryTreeObj = new BinaryTree(node1);
 
 
 console.log('preOrder : >', binaryTreeObj.preOrder());
+<<<<<<< HEAD
 console.log('inOrder : >', binaryTreeObj.inOrder());
 console.log('post : >', binaryTreeObj.postOrder());
+=======
+// console.log('inOrder : >', binaryTreeObj.inOrder());
+// console.log('post : >', binaryTreeObj.postOrder());
+
+console.log('addSum : >', binaryTreeObj.addSum());
+
+
+// console.log('findMaximumValue ==> ', binaryTreeObj.findMaximumValue());
+
+>>>>>>> repeated-word
 
 
 
@@ -145,17 +212,22 @@ class BinarySearchTree {
 }
 
 
-let BST = new BinarySearchTree();
+// let BST = new BinarySearchTree();
 
-BST.add(1);
-BST.add(2);
-BST.add(3);
-BST.add(4);
-BST.add(5);
+// BST.add(1);
+// BST.add(2);
+// BST.add(3);
+// BST.add(4);
+// BST.add(5);
 // BST.contains(5);
 
+<<<<<<< HEAD
 console.log('contaaaains', BST.contains(10));
 console.log('addd', BST);
+=======
+// console.log('contaaaains', BST.contains(10));
+// console.log('addd', BST);
+>>>>>>> repeated-word
 
 
 // console.log('vvv',BST.root.value);

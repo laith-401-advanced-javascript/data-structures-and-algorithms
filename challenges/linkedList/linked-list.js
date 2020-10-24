@@ -158,21 +158,64 @@ class LinkedList {
   }
 
 
-  dublicatedLL(){
-    let currentNode = this.head; 
+  // dublicatedLL() {
 
-    while(currentNode){
+  //   let currentNode = this.head;
+  //   let currentNode2 = currentNode.next ;
 
-        while(currentNode.next) {
-          if(currentNode.value == currentNode.next.value) {
-            currentNode
-          }
-        }
+  //   while (currentNode) {
+
+  //     while (currentNode2) {
+  //       if (currentNode.value == currentNode2.value) {
+  //         // currentNode.next = currentNode2.next.next;
+  //         console.log('if');
+  //         // currentNode = currentNode.next ;
+  //         // return `deleted` ;
+  //       } else {
+  //         return ` no Dublicate`
+  //       }
+  //       currentNode2 = currentNode2.next ;
+  //     }
+  //     currentNode = currentNode.next ;
+  //   }
+  //   return this;
+
+  // }
+
+  // this method to check if we have a value in LL and delete that velue
+  deleteValue(value) {
+    let currentNode = this.head;
+    if (currentNode.value == value) {
+      this.head = currentNode.next;
     }
+    while (currentNode) {
+      if (currentNode.next.value == value) {
+        currentNode.next = currentNode.next.next;
+      } else {
+        return ` the value is not exist `;
+      }
+    }
+
   }
 
 
+  meddileLL() {
+    let currentNode = this.head;
+    let array = [];
+    while (currentNode) {
+      array.push(currentNode);
+      currentNode = currentNode.next;
+    }
+    let mid = Math.floor(array.length / 2);
+    console.log('mid >>', mid);
+
+    return array[mid];
+
+
+  }
+
 }
+
 
 function reverseLinkedList(list1) {
 
@@ -212,40 +255,37 @@ function reverseLinkedList(list1) {
 //     }
 // }
 
-
-
 const ll = new LinkedList();
 const ll2 = new LinkedList();
 const ll3 = new LinkedList();
 
 ll.insert(1);
 ll.insert(2);
-
 ll.insert(15);
-ll.insert(20);
-ll.maxValue()
+ll.insert(2);
+// ll.dublicatedLL();
 // ll3.mergeLists(ll, ll2);
 // ll.kthFromEnd(1);
 // console.log('-------', ll.kthFromEnd(0));
 
 // console.log('**********', ll.insertBefore(1,6));
 console.log('-------', ll.toString());
-console.log('-------', ll.maxValue());
+console.log('-------', ll.dublicatedLL().toString());
 
 
 // console.log('-------', ll3.mergeLists(ll, ll2).toString());
 // console.log('-------', llpalindrom(ll).toString());
 
-// console.log('-------', reverseLinkedList(ll).toString());
-// console.log('LL objects', ll);
+// ll2.insert(15);
+// ll2.insert(20);
+// ll3.mergeLists(ll, ll2);
 
 // ll3.reverseLinkedList(ll2);
-// ll.insertBefore(10, 50);
-// ll.insertAfter(5, 4);
+// ll.insertBefore(1, 50);
 
-// ll.insert(15);
-// ll.insert(20);
-// ll.insert(25);
+// ll.insertAfter(5, 4);
+// console.log('-------', ll.toString());
+
 
 
 // console.log('***********---********');

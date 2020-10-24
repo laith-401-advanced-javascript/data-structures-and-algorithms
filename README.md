@@ -23,9 +23,11 @@ Home         | [Home](https://github.com/laith-401-advanced-javascript/data-stru
  codeChallenge11    | [ queue-with-stack](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/9)
  codeChallenge12    | [ fifo-animal](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/10)
  codeChallenge13    | [ multi - bracket](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/11)
-  codeChallenge15    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
-  codeChallenge16    | [ maxValue](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
-    codeChallenge31    | [ Stringthy](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
+  codeChallenge14    | [ Tree](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/12)
+  codeChallenge27    | [ Sorting](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/13)
+  codeChallenge28    | [ Quicksort](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/pull/14)
+
+
 
 # codeChallenge
 
@@ -66,4 +68,4 @@ linkedIn :https://www.linkedin.com/in/laith-aldaree/
 
 
 ### Github Actions
-[actions](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions/runs/248646289)
+[actions](https://github.com/laith-401-advanced-javascript/data-structures-and-algorithms/actions)

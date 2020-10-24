@@ -23,14 +23,8 @@ class BinaryTree {
     let _traverse = (node) => {
       output.push(node.value);
 
-      if (node.left) {
-        _traverse(node.left);
-      }
-      if (node.right) {
-
-        _traverse(node.right);
-
-      }
+      if (node.left) { _traverse(node.left);   }
+      if (node.right) {  _traverse(node.right); }
     };
     _traverse(this.root);
     return output;
@@ -133,6 +127,7 @@ let binaryTreeObj = new BinaryTree(node1);
 
 
 // console.log('preOrder : >', binaryTreeObj.preOrder());
+console.log('post : >', binaryTreeObj.postOrder());
 // console.log('inOrder : >', binaryTreeObj.inOrder());
 // console.log('post : >', binaryTreeObj.postOrder());
 
@@ -222,8 +217,9 @@ class BinarySearchTree {
 // BST.add(5);
 // BST.contains(5);
 
-// console.log('contaaaains', BST.contains(10));
-// console.log('addd', BST);
+console.log('contaaaains', BST.contains(10));
+console.log('addd', BST);
+
 
 
 // console.log('vvv',BST.root.value);

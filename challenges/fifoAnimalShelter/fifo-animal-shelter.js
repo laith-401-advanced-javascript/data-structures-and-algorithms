@@ -23,8 +23,8 @@ class AnimalShelter {
     if (value === 'cat' || value === 'dog') {
       let newNode = new Node(value);
       if (this.front) { // if the front  not empty 
+        this.rare.prev = newNode;
         this.rare = newNode;
-        this.front.prev = this.rare;
 
       } else {
         this.front = newNode;
@@ -41,6 +41,7 @@ class AnimalShelter {
   isEmpty() {
     return this.length > 0 ? false : true;
   }
+  
   dequeue(value) {
     if (value === 'cat' || value === 'dog') {
 
@@ -73,9 +74,12 @@ class AnimalShelter {
 
 const animalObj = new AnimalShelter();
 // animalObj.enqueue('dog');
-animalObj.enqueue('cat');
+// animalObj.enqueue('caa');
+// animalObj.enqueue('dog');
+// animalObj.enqueue('cat');
+
 // animalObj.dequeue('aa');
-console.log('>>>>>>>>', animalObj.dequeue('cat'));
+console.log('>>>>>>>>', animalObj.enqueue('cata'));
 console.log('caaaat', animalObj);
 
 

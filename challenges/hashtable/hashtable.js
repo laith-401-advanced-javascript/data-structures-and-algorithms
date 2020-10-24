@@ -8,7 +8,9 @@ class HashTable {
 
 
   hash(key) {
+    
     let charArr = key.split('');
+    // console.log('wwwwww',charArr);
     return charArr.reduce((accumilate, value) => {
       return accumilate + value.charCodeAt(0);
 
@@ -17,7 +19,7 @@ class HashTable {
 
   add(key, value) {
     let hashIndex = this.hash(key);
-
+// console.log('wjjjjjjjjjjjjjjwwwww',hashIndex);
     if (!this.entries[hashIndex]) {
       this.entries[hashIndex] = new LinkedList();
     }
@@ -85,8 +87,8 @@ myHash.add('Laith', 123);
 myHash.add('Laith', 111);
 // myHash.add('Laith', 222);
 
-console.log('myHash', myHash);
-console.log('get>>>', myHash.hash('Laith'));
+// console.log('myHash', myHash);
+// console.log('get>>>', myHash.hash('Laith'));
 // console.log(myHash.entries[318]);
 
 

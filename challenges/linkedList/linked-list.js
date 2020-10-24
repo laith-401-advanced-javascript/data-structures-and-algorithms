@@ -144,6 +144,32 @@ class LinkedList {
 
   }
 
+  // return the max value in   LL 
+  maxValue() {
+    let currentNode = this.head;
+    let maxValue = 0;
+    while (currentNode) {
+      if (currentNode.value > maxValue) {
+        maxValue = currentNode.value;
+      }
+      currentNode = currentNode.next;
+    }
+    return maxValue;
+  }
+
+
+  dublicatedLL(){
+    let currentNode = this.head; 
+
+    while(currentNode){
+
+        while(currentNode.next) {
+          if(currentNode.value == currentNode.next.value) {
+            currentNode
+          }
+        }
+    }
+  }
 
 
 }
@@ -177,7 +203,6 @@ function reverseLinkedList(list1) {
 //     while (curuntNode.next) {
 //         curuntNode = curuntNode.next;
 //         arr.push(curuntNode.value);
-
 //     }
 //     for (let i = 0; i < arr.length / 2; i++) {
 //         if (arr[i] !== arr[arr.length - (i + 1)]) {
@@ -195,22 +220,23 @@ const ll3 = new LinkedList();
 
 ll.insert(1);
 ll.insert(2);
-// ll.insert(3);
-// ll.insert(5);
 
-ll2.insert(15);
-ll2.insert(20);
+ll.insert(15);
+ll.insert(20);
+ll.maxValue()
 // ll3.mergeLists(ll, ll2);
 // ll.kthFromEnd(1);
-console.log('-------', ll.kthFromEnd(0));
+// console.log('-------', ll.kthFromEnd(0));
 
 // console.log('**********', ll.insertBefore(1,6));
 console.log('-------', ll.toString());
+console.log('-------', ll.maxValue());
 
-console.log('-------', ll3.mergeLists(ll, ll2).toString());
+
+// console.log('-------', ll3.mergeLists(ll, ll2).toString());
 // console.log('-------', llpalindrom(ll).toString());
 
-console.log('-------', reverseLinkedList(ll).toString());
+// console.log('-------', reverseLinkedList(ll).toString());
 // console.log('LL objects', ll);
 
 // ll3.reverseLinkedList(ll2);

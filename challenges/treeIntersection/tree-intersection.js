@@ -51,11 +51,6 @@ console.log('****', tree_intersection(binaryTreeObj, binaryTreeObj2));
 
 
 
-
-
-
-
-
 module.exports = { tree_intersection }
 
 

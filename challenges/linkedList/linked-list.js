@@ -220,6 +220,7 @@ class LinkedList {
 function reverseLinkedList(list1) {
 
   let curentNode1 = list1.head;
+
   if (!curentNode1) {
     return `linked list is empty`;
   }
@@ -271,32 +272,6 @@ ll.insert(2);
 // console.log('**********', ll.insertBefore(1,6));
 console.log('-------', ll.toString());
 console.log('-------', ll.dublicatedLL().toString());
-
-
-// console.log('-------', ll3.mergeLists(ll, ll2).toString());
-// console.log('-------', llpalindrom(ll).toString());
-
-// ll2.insert(15);
-// ll2.insert(20);
-// ll3.mergeLists(ll, ll2);
-
-// ll3.reverseLinkedList(ll2);
-// ll.insertBefore(1, 50);
-
-// ll.insertAfter(5, 4);
-// console.log('-------', ll.toString());
-
-
-
-// console.log('***********---********');
-
-// ll.includes(5);
-// ll.includes(4);
-// console.log('=====================>');
-
-// ll.toString();
-// console.log('+++++++++++++++', ll.toString());
-
 
 
 module.exports = LinkedList;

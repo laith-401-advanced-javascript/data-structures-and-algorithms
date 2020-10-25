@@ -123,7 +123,7 @@ node3.right = node4;
 node3.left = node5;
 
 
-let binaryTreeObj = new BinaryTree(node1);
+// let binaryTreeObj = new BinaryTree(node1);
 
 
 // console.log('preOrder : >', binaryTreeObj.preOrder());

@@ -43,9 +43,8 @@ function lengthyString(str) {
 // }
 
 
-
 // console.log(lengthyString("abc abc"));
-lengthyString('In a galaxy far far away away away')
+// lengthyString('In a galaxy far far away away away')
 
 
 module.exports = lengthyString;

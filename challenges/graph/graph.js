@@ -87,7 +87,7 @@ graph.addVertex(ten);
 graph.addVertex(eliven);
 
 
-graph.addDirectedEdge(one,two);
+graph.addDirectedEdge(one,two ,'$20');
 graph.addDirectedEdge(one,five);
 graph.addDirectedEdge(two,four);
 graph.addDirectedEdge(three,one);

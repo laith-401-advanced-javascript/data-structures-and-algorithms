@@ -19,7 +19,7 @@ class HashTable {
 
   add(key, value) {
     let hashIndex = this.hash(key);
-// console.log('wjjjjjjjjjjjjjjwwwww',hashIndex);
+    // console.log('wjjjjjjjjjjjjjjwwwww',hashIndex);
     if (!this.entries[hashIndex]) {
       this.entries[hashIndex] = new LinkedList();
     }

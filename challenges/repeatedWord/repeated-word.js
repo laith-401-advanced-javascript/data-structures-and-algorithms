@@ -5,8 +5,8 @@
 
 function lengthyString(str) {
   let splitString = str.split(' ');
-  let max = 0
-  let maxStr = ''
+  let max = 0;
+  let maxStr = '';
   for (let i = 0; i < splitString.length; i++) {
     let sum = 0;
     for (let j = i + 1; j < splitString.length; j++) {
@@ -17,12 +17,12 @@ function lengthyString(str) {
       }
     }
     if (sum > max) {
-      max = sum
-      maxStr = splitString[i]
+      max = sum;
+      maxStr = splitString[i];
     }
   }
   console.log(maxStr);
-  return maxStr
+  return maxStr;
 
 }
 

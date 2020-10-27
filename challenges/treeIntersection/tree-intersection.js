@@ -6,16 +6,16 @@ function tree_intersection(tree1, tree2) {
   let array = [];
 
 
-  let tree1Arr = tree1.preOrder()
-  let tree2Arr = tree2.preOrder()
+  let tree1Arr = tree1.preOrder();
+  let tree2Arr = tree2.preOrder();
 
   tree1Arr.forEach((itm, idx) => {
     console.log('item', itm);
     if (tree2Arr.includes(itm)) {
-      array.push(itm)
+      array.push(itm);
     }
-  })
-  return array
+  });
+  return array;
 
 }
 
@@ -51,7 +51,7 @@ console.log('****', tree_intersection(binaryTreeObj, binaryTreeObj2));
 
 
 
-module.exports = { tree_intersection }
+module.exports = { tree_intersection };
 
 
 

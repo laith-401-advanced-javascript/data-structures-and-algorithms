@@ -4,24 +4,24 @@ const { Graph, Vertex } = require('../graph/graph.js');
 
 
 function getEdges(graph, array) {
-    var sum = 0 ;
-    for (let i = 0; i < array.length; i++) {
-        let neighbors = graph.getNeighbours(array[i]);
-        neighbors.forEach(item => {
-            if (item.vertex.value === array[i + 1].value) {
-              sum += item.wight ;
-                console.log('inside if>>', sum);
-            }
-        });
-        // console.log('neighbors>>', neighbors);
+  var sum = 0 ;
+  for (let i = 0; i < array.length; i++) {
+    let neighbors = graph.getNeighbours(array[i]);
+    neighbors.forEach(item => {
+      if (item.vertex.value === array[i + 1].value) {
+        sum += item.wight ;
+        console.log('inside if>>', sum);
+      }
+    });
+    // console.log('neighbors>>', neighbors);
 
-    }
-    if(sum > 0) {
-        return `${true}  ${sum} `
-    }
-    else {
-        return false ;
-    }
+  }
+  if(sum > 0) {
+    return `${true}  ${sum} `;
+  }
+  else {
+    return false ;
+  }
 
 }
 
@@ -45,7 +45,7 @@ graph.addDirectedEdge(arendella, naboo, 70);
 graph.addDirectedEdge(naboo, pandora, 100);
 
 
-let arr = [pandora, narina]
+let arr = [pandora, narina];
 
 console.log(getEdges(graph, arr));
 

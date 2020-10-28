@@ -172,8 +172,6 @@ class LinkedList {
 
 }
 
-
-
 function reverseLinkedList(list1) {
 
     let curentNode1 = list1.head;
